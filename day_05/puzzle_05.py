@@ -86,5 +86,14 @@ def part_2():
 
 
 if __name__ == "__main__":
+    import time
+
+    start = time.time()
     print(part_1())
+    end = time.time()
+    print(f"part1: {1000*(end-start)} ms")
+
+    start = time.time()
     print(part_2())
+    end = time.time()
+    print(f"part2: {1000*(end-start)} ms")
